@@ -1,0 +1,11 @@
+version: '2'
+services:
+ minecraft:  
+  image: magikcraft/magikcraft-builder
+  container_name: magikcraft-builder
+  ports:
+   - "25565:25565"
+  volumes:
+   - server:/home/server
+volumes:
+  server:
